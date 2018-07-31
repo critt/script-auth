@@ -18,7 +18,7 @@ count = 0
 with open(wordlist) as f:
 	for line in f:
 		count = count + 1
-		#loginHeaders = {'GET': '/HTTP/1.1', 'Host': host, 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0 Iceweasel/43.0.4', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'close'}
+		loginHeaders = {'GET': '/HTTP/1.1', 'Host': host, 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0 Iceweasel/43.0.4', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'close'}
 		
 		timeSent = int(round(time.time() * 1000))
 		r = requests.get(url)
